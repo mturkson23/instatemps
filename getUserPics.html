@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="instafeed.min.js"></script>
+    <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user', //keep this as 'user'
+        userId: YOUR_USER_ID,
+        accessToken: 'YOUR_ACCESS_TOKEN',
+	template: '<a href="{{link}}"><img src="{{image}}" /></a>' //templating options
+    });
+    userFeed.run();
+    </script>
+    <title>insta photos</title>
+  </head>
+  <body>
+ 	<div id="instafeed"></div> 
+  </body>
+</html>
